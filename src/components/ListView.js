@@ -9,7 +9,7 @@ function View() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/api/item")
+      .get("http://3.214.3.182:4000/api/item")
       .then(function ({ data }) {
         console.log(data);
         setData(data);
