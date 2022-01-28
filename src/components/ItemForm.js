@@ -22,7 +22,7 @@ export default function ItemForm() {
     console.log("itemId", itemId);
     if (itemId.trim() === "add") {
       axios
-        .post("http://localhost:4000/api/item", item)
+        .post("http://localhost:3000/api/item", item)
         .then(function (response) {
           alert("Added successfully");
           navigate("/");
