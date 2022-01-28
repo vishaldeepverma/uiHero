@@ -9,7 +9,7 @@ export default function ItemForm() {
   let { itemId } = useParams();
   useEffect(() => {
     if (itemId !== "add") {
-      fetch(`http://3.214.3.182:4000/api/item/${itemId}`)
+      fetch(`http://3.214.3.182:3000/api/item/${itemId}`)
         .then((res) => res.json())
         .then((result) => {
           setItem(result);
@@ -32,7 +32,7 @@ export default function ItemForm() {
         });
     } else {
       axios
-        .put("http://3.214.3.182:4000/api/item", item)
+        .put("http://3.214.3.182:3000/api/item", item)
         .then(function (response) {
           alert("Updated successfully");
           navigate("/");
