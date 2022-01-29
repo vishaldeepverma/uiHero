@@ -53,6 +53,7 @@ export default function ItemForm() {
         <Form.Group className="mb-3">
           <Form.Label>Item Name</Form.Label>
           <Form.Control
+            required
             name="name"
             type="text"
             value={item.name}
@@ -62,6 +63,7 @@ export default function ItemForm() {
         <Form.Group className="mb-3">
           <Form.Label>Type</Form.Label>
           <Form.Control
+            required
             name="type"
             type="text"
             value={item.type}
@@ -71,6 +73,7 @@ export default function ItemForm() {
         <Form.Group className="mb-3">
           <Form.Label>Price</Form.Label>
           <Form.Control
+            required
             name="price"
             type="text"
             value={item.price}
@@ -80,6 +83,7 @@ export default function ItemForm() {
         <Form.Group className="mb-3">
           <Form.Label>Warranty</Form.Label>
           <Form.Control
+            required
             name="warranty"
             type="text"
             value={item.warranty}
@@ -89,6 +93,7 @@ export default function ItemForm() {
         <Form.Group className="mb-3">
           <Form.Label>Date of Manufacture</Form.Label>
           <Form.Control
+            required
             name="dateOfManufacture"
             type="date"
             value={item.dateOfManufacture}
