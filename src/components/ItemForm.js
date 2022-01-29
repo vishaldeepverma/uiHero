@@ -62,13 +62,17 @@ export default function ItemForm() {
         </Form.Group>
         <Form.Group className="mb-3">
           <Form.Label>Type</Form.Label>
-          <Form.Control
-            required
+          <Form.Select
             name="type"
-            type="text"
             value={item.type}
+            aria-label="Default select example"
             onChange={onChangeHandler}
-          />
+          >
+            <option>Choose item type</option>
+            <option value="TYPE01">TYPE01</option>
+            <option value="TYPE02">TYPE02</option>
+            <option value="TYPE03">TYPE03</option>
+          </Form.Select>
         </Form.Group>
         <Form.Group className="mb-3">
           <Form.Label>Price</Form.Label>
