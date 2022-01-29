@@ -75,7 +75,8 @@ export default function ItemForm() {
           <Form.Control
             required
             name="price"
-            type="text"
+            min="100"
+            type="number"
             value={item.price}
             onChange={onChangeHandler}
           />
@@ -85,7 +86,9 @@ export default function ItemForm() {
           <Form.Control
             required
             name="warranty"
-            type="text"
+            min="1"
+            max="10"
+            type="number"
             value={item.warranty}
             onChange={onChangeHandler}
           />
